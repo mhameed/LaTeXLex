@@ -1,0 +1,9 @@
+author: mh
+date: 09/03/24
+description: tests that the right amount of whitespace is left in the file in response to various items that would usually create visual spacing (newlines)
+
+
+duplicates the contents of t4 by:
+* no newlines before of the things such as \medskip
+* whitespace either side of the things such as \medskip
+

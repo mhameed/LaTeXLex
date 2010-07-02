@@ -1,0 +1,3 @@
+author: ehc
+date: 09/10/07
+description: test that \mathcal{A}, {\mathcal A}, \cal{A}, {\cal A} all produce \calA and similar for scr and frak

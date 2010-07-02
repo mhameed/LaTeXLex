@@ -1,0 +1,8 @@
+ \phi_M(y)=1 for all y \in {\cal L}_{yes}, and
+
+\phi_M(y)=0 for all y \in {\overline I} \setminus {\cal L}_{yes}.
+
+(Function \phi_M(y) was defined previously and carries a halting (for M)
+input y to the corresponding output computed by M.) 
+
+

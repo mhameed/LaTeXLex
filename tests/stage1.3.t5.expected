@@ -1,0 +1,23 @@
+Here is some text and now some maths
+$\calA, \calA, \calA, \calA$
+$\scrA, \scrA, \scrA, \scrA$
+$\frakA, \frakA, \frakA, \frakA$
+$\bbA, \bbA, \bbA, \bbA$
+
+And here is a harder one in a sentence \calA
+\calA is interesting and then
+$$
+\calA
+$$
+and $$\calA$$ and $\calA$
+
+Some harder examples:
+$\calA \calB \calC$
+$\calA^{\#}$
+${\calA} .\calA.$
+There is some question regarding what we want the output to be in these cases.
+
+$\bb1$
+$1$
+$\bb1\bb0$
+$\bb10$

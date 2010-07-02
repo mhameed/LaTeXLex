@@ -1,0 +1,56 @@
+A paragraph 
+
+A second
+
+A third
+
+A paragraph
+
+This is a new paragraph following a par and should not be pulled up 
+
+Now we have another paragraph, this followed a medskip and should not have been pulled up.
+
+
+Now we have another paragraph, this followed a bigskip and should not have been pulled up. 
+
+
+
+Now we have a new page this should not have been pulled up.
+
+
+
+Now we have another new page, this should not have been pulled up.
+
+A new paragraph after a line of whitespace
+
+A last paragraph after a line of spaces and tabs
+
+
+----
+
+A  paragraph
+
+A second
+
+A third
+
+A paragraph 
+
+This is a new paragraph  following a par and should not be pulled up
+
+Now we have another paragraph, this followed a  medskip and should not have been pulled up.
+
+
+Now we have another paragraph,  this followed a bigskip and should not have been pulled up.
+
+
+
+Now we have a new page this  should not have been pulled up.
+
+
+
+Now we have another new page,  this should not have been pulled up.
+
+A new paragraph after a line of whitespace
+
+A last paragraph after a line of spaces and tabs 

@@ -1,0 +1,26 @@
+
+LaTeXLex
+
+The goal of LaTeXLex is to clean up documents written in LaTeX, particularly those containing mathematics, producing a "human readable" LaTeX. 
+
+You might find this tool useful if you need to read a text only version of a document and you have been provided with the LaTeX source. LaTeX source contains many commands which describe how the document will be visually presented in an output format and these can impede reading. While you might occasionally wish to know how the author chose to display the content LaTeXLex allows you to choose to ignore this unless it is important. 
+
+LaTeXLex optionally replaces LaTeX Greek letters by their UTF-8 symbol and substitutes maths alphabets such as blackboard bold and calligraphic by their UTF-8 symbols. You may find that you cannot read these symbols either because you do not have the fonts available or you cannot configure your Braille display or associated software to report these to you. If you cannot read UTF-8 you should use the flags --no-utf8-greek and --no-utf8-symb to output an ASCII only version. 
+
+You will find that the output still contains LaTeX commands. In the most part, those that remain are semantic mark-up, important for understanding content, or cannot be removed easily. Please note that LaTeXLex may cause text to be ambiguous so we recommend that the reader keeps a copy of the original handy so that they can compare. For instance, in a text containing $x$ and ${\bf x}$ currently both will be rewritten to just x since LaTeXLex removes bold, italics and emphasis to increase readability. This might be a problem in a text where the author has bold x and x to have different meaning. Some of the maths commands are replaced by our favourites (e.g. \vee replaced by \lor) or by ASCII equivalents and you might wish to personalise this. They are all set in stage1.0.lex.
+
+LaTeXLex works on Linux but in the past we have been able to compile and run it under Cygwin however, this was a few years back. If the file you have been provided with was written on a Mac computer you should first run the included mac2unix.pl or similar. This is because Mac computers have a different way of signaling the end of a line and LaTeXLex expects the Unix/Linux method. Note that you might also have issues with line endings if you run the code on Windows. 
+
+We choose to use Flex to write LaTeXLex because attempts to use a parser would have failed, as LaTeX is a free grammar. Flex allows us to take into account some level of context when re-writing text and so has been found to be more expressive than other processing methods. 
+
+You will find a tar.bz2 archive of the sources and some of the tests. At present time we are unable to provide version control system (VCS) access. 
+
+As LaTeXLex has matured and a wide range of inputs from many authors and output from <href='http://www.inftyproject.org/en/index.html'>Infty software</a> we found it best to write a test suite so that when we add in new rules to deal with new LaTeX issues we do not break the way that we already process text. If you make any changes to LaTeXLex, even small ones, it is advisable that you run 
+> ./run_tests.sh 
+> ./run_tests.sh pipe 
+and check that all tests report Ok. Ideally you should add your own small test in the tests directory. Tests are small snippets of LaTeX which are the minimum amount of lines to reproduce a particular situation. However, quite complex interactions can occur between our rules and LaTeX and the pipes aim to catch these. Unfortunately you are missing two of the pipes due to the use of copyright material in the tests. 
+
+LaTeXLex remains a work in progress, you will find some parts have not yet been implemented to our satisfaction and you may find complex LaTeX documents (particularly those containing raw TeX) that it cannot process sufficiently. If you have comments or patches then please feel free to let us know! 
+
+LaTeXLex is provided as is under the <href='http://www.gnu.org/licenses/gpl.txt'>GPL licence</a>
+and is copyright 2006-2010 Mesar Hameed, Emma Cliffe.

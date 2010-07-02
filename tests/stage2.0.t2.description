@@ -1,0 +1,3 @@
+author: ehc
+date: 09/04/08
+description: to check that the right thing happens when we have blank lines inside an item and when there is a \item[something] 

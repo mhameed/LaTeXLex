@@ -1,0 +1,13 @@
+Here is a paragraph that splits over multiple lines, this is the second line. This is the third line.
+
+Here is the second paragraph!
+And this line after the exclaim will undoubtedly stay dropped.
+\begin{verbatim}
+Here is a paragraph that splits over multiple lines,
+this is the second line.
+This is the third line.
+
+Here is the second paragraph!
+And this line after the exclaim will undoubtedly stay dropped.
+\end{verbatim}
+Here is some text after the verbatim. 

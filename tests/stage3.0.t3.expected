@@ -1,0 +1,12 @@
+Here is some text, it is spread across several lines... this is the fourth line
+
+\begin{array}{ccc}
+1 & 2 & 3\\
+4 & 5 & 6
+\end{array}
+Here is some more text, it is followed by some mathematics:
+\begin{eqnarray*}
+x + y &=& z\\
+a + b &=& c
+\end{eqnarray*}
+

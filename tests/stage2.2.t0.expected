@@ -1,0 +1,25 @@
+Here is some text and then some maths:
+$$
+\psi : X \rightarrow Y
+$$
+
+And some text and now a tabbing env:
+\begin{tabbing}
+Here is some piece of text \= more text \= still more text \= last text \\
+second row \>  more at one tab in \\
+third row \> \> more at two tabs in
+\end{tabbing}
+
+\begin{verbatim}
+Here is some text and then some maths:
+$$
+\psi\>: X \rightarrow Y
+$$
+
+And some text and now a tabbing env:
+\begin{tabbing}
+Here is some piece of text \= more text \= still more text \= last text \\
+second row \>  more at one tab in \\
+third row \> \> more at two tabs in
+\end{tabbing}
+\end{verbatim}

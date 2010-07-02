@@ -1,0 +1,13 @@
+\begin{itemize}
+\item This is the first item on one line 
+\item This is the second item split across two lines 
+\item This is the third item following on the same line by the fourth
+\item This is the fourth item 
+\begin{itemize}
+\item This is the first item on one line 
+\item This is the second item split across two lines 
+\item This is the third item following on the same line by the fourth
+\item This is the fourth item 
+\end{itemize}
+
+\end{itemize}

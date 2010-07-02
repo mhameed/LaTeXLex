@@ -1,0 +1,8 @@
+ \parbox{2cm}{
+Here is some stuff inside the parbox.
+}
+\begin{verbatim}
+ \parbox{2cm}{
+Here is some stuff inside the parbox.
+}
+\end{verbatim}

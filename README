@@ -1,0 +1,29 @@
+Please see also the file DESCRIPTION
+
+To compile:
+> make
+
+To remove binaries and test output:
+> make clean
+
+To run tests:
+> make test
+
+To obtain help:
+> ./run.sh
+
+To obtain output "human readable" LaTeX using ASCII only:
+> ./run.sh --no-utf8-greek --no-utf8-symb input.tex 
+produces file input.tex.out
+
+To obtain output "human readable" LaTeX with UTF-8 replacements for Greek and some maths alphabets:
+> ./run.sh input.tex 
+produces file input.tex.out
+
+To obtain output "human readable" LaTeX with UTF-8 replacements for Greek only:
+> ./run.sh --no-utf8-symb input.tex 
+produces file input.tex.out
+
+To obtain output "human readable" LaTeX with UTF-8 replacements for maths alphabets only:
+> ./run.sh --no-utf8-symb input.tex 
+produces file input.tex.out

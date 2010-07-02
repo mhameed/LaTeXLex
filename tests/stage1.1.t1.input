@@ -1,0 +1,8 @@
+Here is some text with single dollar maths $x^2$ and then some double dollar on the same line $$x^2$$ and now some single dollar on a new line
+$x^2$
+and now some double dollar on a new line
+$$x^2$$
+and not some double dollars on their own lines
+$$
+x^2
+$$

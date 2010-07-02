@@ -1,0 +1,266 @@
+\magnification=\magstep1
+\font =cmbx10 scaled \magstep1
+
+ CM30073 Advanced Algorithms and Complexity
+\bigskip
+\bigskip
+
+Lecture Notes 7
+\medskip
+
+Issued  4 May 2007
+\bigskip
+
+
+
+ 1.  Complexity measure for real numbers machines
+\medskip 
+
+\begin{itemize}
+\item This file was originally from Nicolai
+\item But we have added some extras for testing
+\item This is  one of those extras
+\end{itemize}
+
+\begin{tabular}{ccc}
+& 
+comments & tabular & itemize \\
+\hline
+nnv & 
+No & No & No \\ ehc & 
+Added & Added & Added
+\end{tabular}
+
+In LN 5 the running time T_M(y) was introduced for the computation
+of the machine M on the input y \in {\ol I}.
+The running time is a real numbers machine analogy of the number of elementary
+steps for Turing machine computation. 
+As in Turing machine case, we say that M has polynomial complexity
+if T_M(y) is bounded from above by a polynomial in the size of the input
+(where the concept of size has yet to be defined).
+This leads us to the following sequence of definitions.
+\bigskip
+
+ Definition 1.  For an input y=(y_1, ... , y_l) \in {\ol I} = R^l its size is l. 
+\bigskip
+
+ Definition 2.  A real numbers machine M has
+polynomial complexity if
+$$T_M(y) <= c(size(y))^q$$
+for all y \in {\ol I} and some positive integer constants
+c,q. 
+\bigskip
+
+ Remark.  In the context of complexity, we consider
+l, the dimension of the input space, as a parameter.
+That is, we view a real numbers machine as a series of similar machines,
+as defined above, parameterized by l, having identical graphs, but
+differing in the dimension of spaces \ol I, \ol S,
+\ol O.
+Constants c and q, in the Definition 2, do not depend on l.
+Rigorous definition of the machine with respect to complexity issues requires
+introduction of infinite dimension spaces for \ol I, \ol S,
+\ol O.
+\bigskip
+
+ Examples.
+\medskip
+
+ (1)  Performing arithmetic operations over reals can be done
+by machines with polynomial complexity.
+
+Observe that the similar fact (polynomial complexity algorithm for arithmetic)
+is true for integers and Turing machines.
+\medskip
+
+ (2)  The machine M for finding the integer part of a real
+number has T_M(y) = O(y).
+Observe that  y is a real number
+(a point having one component), thus if a machine M had polynomial
+complexity, then T_M(y) would be a constant.
+It follows that M does not have polynomial complexity.
+\bigskip
+
+ 2.  Yes - No problems
+\medskip
+
+ Definition 1.  We say that a RE set
+\calL_{yes} \subset {\ol I},
+is a Yes - No-problem belonging to
+the class P if there is a real numbers machine M of polynomial
+complexity with \Omega_M = {\ol I} such that
+\medskip
+
+ \phi_M(y)=1 for all y \in \calL_{yes}, and
+\medskip
+
+ \phi_M(y)=0 for all y \in {\ol I} \setminus \calL_{yes}.
+\medskip
+
+(Function \phi_M(y) was defined previously and carries a halting (for M)
+input y to the corresponding output computed by M.) 
+\bigskip
+
+ Definition 2.  We say that a RE set
+\calL_{yes} \subset {\ol I},
+is a Yes - No-problem belonging to
+the class NP if there is a real numbers machine M (called
+nondeterministic in this context) with the input space
+{\ol I_M} = {\ol I} \times {\ol I'}, where
+{\ol I'} = R^s for some integer s >= 0, such that
+\medskip
+
+ (1)  \phi_M(y,y') takes values 1 or 0 only;
+\medskip
+
+ (2)  if \phi_M(y,y')=1, then y \in \calL_{yes};
+\medskip
+
+ (3)  for every y \in \calL_{yes} there is
+y' \in {\ol I'} such that \phi_M(y,y')=1 and
+T_M(y,y') <= c(size(y))^q for some positive c,q \in Z.
+\medskip
+
+(Subvector y' \in {\ol I'} can be interpreted as a "guess"
+made by nondeterministic machine M at the beginning of the
+computation.) 
+\bigskip
+
+ Theorem.  P \subset NP.
+\medskip
+
+ Proof  is obvious, since any nondeterministic machine
+is a particular case of a deterministic (ordinary) one.
+\medskip
+
+ Remark.  It is not known whether or not P=NP.
+It is an open problem independent from its combinatorial counterpart.
+\bigskip
+
+ 3.  Examples of problems in NP
+\medskip
+
+In both of the following examples the RE set of the kind
+\calL_{yes} is the set of all inputs leading to output
+Yes.
+\bigskip
+
+ (1)  Traveling Salesman
+\medskip
+
+ Input :  Distance matrix
+$$\| d_{ij} \|,\> 1 <= i,j <= n,\> 0< d_{ij} \in R,$$
+and a real number k>0.
+\medskip
+
+ Output :  Yes if there exists a permutation
+i_1, i_2, ... ,i_n (called "tour")
+of the numbers 1,2, ... ,n such that
+$$ \sum_{1 <= j < n} d_{i_ji_{j+1}} + d_{i_ni_1} <= k;$$
+else, No.
+\bigskip
+
+A nondeterministic machine for Traveling Salesman is shown on
+a separate sheet.
+The "guess" here is the tour y'=(y'_1, ... , y'_n)
+of the length not exceeding k.
+The machine includes subroutine for deciding whether y' is
+indeed a tour, which simply checks (in polynomial time) that each integer
+from 1 to n appears in the sequence y'_1, ... , y'_n.
+\bigskip
+
+ (2)  4-Feasibility
+\medskip
+
+ Input :  Polynomial f in n variables with real
+coefficients and of the degree at most 4 (given as a list of all coefficients
+in a certain order).
+\medskip
+
+ Output :  Yes if there exists a real solution
+of the equation f=0, that is, a vector x=(x_1, ... , x_n) \in R^n with f(x)=0; else, No.
+\bigskip
+
+A nondeterministic machine first "guesses" the solution y' of
+f=0 and then checks in polynomial time whether f(y')=0.
+\bigskip
+
+ 4.  NP-complete problems
+\medskip
+
+ Definition 1.  For two Yes - No-problems
+\calL_1 \subset {\ol I}_1,\> \calL_2 \subset {\ol I}_2,
+we say that \calL_1 is polynomially
+transformable to \calL_2 over R (notation:
+\calL_1 \propto_{R} \calL_2) if there is a map
+$$\psi\> :  {\ol I}_1 --> {\ol I}_2$$
+such that:
+\medskip
+
+ (1)  y \in \calL_1 if and only if
+\psi (y) \in \calL_2;
+\medskip
+
+ (2)  \psi can be computed by a real numbers machine
+in polynomial time. 
+\bigskip
+
+ Definition 2.  Yes - No-problem
+\calL is called NP-complete if
+\medskip
+
+ (1)  \calL \in NP;
+\medskip
+
+ (2)  for any Yes - No-problem \calL',
+if \calL' \in NP, then \calL' \propto_{R} \calL.
+\bigskip
+
+ 6.  4-Feasibility is NP-complete
+\medskip
+
+ Theorem.  4-Feasibility problem is NP-complete.
+\medskip
+
+ Outline of a proof.  We had already seen
+that 4-Feasibility belongs to NP.
+
+Now let \calL' be an arbitrary Yes - No-problem from NP,
+i.e., it can be solved by a
+nondeterministic real numbers machine M from the Definition 2, Section 3.
+We construct the map \psi from the Definition 2, Section 4 as follows.
+
+Let y \in \calL' and the answer 1 (Yes) is reached after
+T_M(y,y') steps.
+Here y'=(y'_1, ... , y'_k) is a "guess" of M.
+According to the Corollary from LN 5.5, there exist an integer
+s and a polynomial f_T in s+l+k variables of degree not exceeding 4, such
+that
+(y,y') is a halting input within T_M(y,y') <= c(size(y))^q=T
+if and only if there exist
+real numbers u_1, u_2, ... u_s with
+$$f_T(u_1, ... , u_s,y_1, ... , y_l,y'_1, ... , y'_k)=0.$$
+Adding to this equation the equation O(x_T)=1 (recall that O is the
+unique output map of the machine M), we get a system which can be
+straightforwardly converted to a single equation
+$$f'_T(u'_1, ... , u'_{s'},y_1, ... , y_l,y'_1, ... , y'_k)=0$$
+with f'_T of degree at most 4.
+Define \psi (y_1, ... , y_l) to be a polynomial in variables
+$$u'_1, ... , u'_{s'},y'_1, ... , y'_k$$
+obtained from f'_T by assigning to l variables on places from s'+1 to s'+l
+the values y_1, ... , y_l.
+
+The fact that \psi can be computed in polynomial time follows from the
+complexity bounds "hidden" in the Theorem from LN 6.5
+(we did not prove these bounds properly anyway).
+\bigskip
+
+ Remark.  Using some rather sophisticated algorithms,
+based on algebraic geometry technique, it is possible to solve
+4-Feasibility problem on ordinary (deterministic) machine
+with complexity not exceeding 2^{O(n)}.
+Therefore, any problem from NP can be solved on a deterministic machine
+in exponential time.
+Compare this with the straightforward elementary result for Turing machines.
+
+

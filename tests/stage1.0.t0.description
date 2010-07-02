@@ -1,0 +1,4 @@
+author: mmh
+date: 09/02/28
+description: 
+Making sure that begin{center} environments are removed outside verbatim, but not inside.

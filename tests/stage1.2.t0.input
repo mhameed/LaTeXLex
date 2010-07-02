@@ -1,0 +1,7 @@
+hi this is some text.
+Here comes a %comment.
+%This line is a comment
+
+\begin{verbatim}
+%this is a comment.
+\end{verbatim}

@@ -1,0 +1,12 @@
+Hi this is a test in $r^n$ space.
+Here comes a %comment.
+%dollars split over 3 lines.
+$f(x) :=
+x^2+2x+1
+$
+\begin{verbatim}
+%this is a comment.
+$f(x) :=
+x^2+2x+1
+$
+\end{verbatim}

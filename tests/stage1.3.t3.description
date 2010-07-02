@@ -1,0 +1,3 @@
+author: ehc
+date: 09/03/03
+description: test to check that braces specifically allowed not to match are allowed not to without affecting the other functionality. If you don't believe that this test is required then remove the lines with comment /*These braces are specifically allowed not to match*/ from stage 1.3 and wathch it fail ;)

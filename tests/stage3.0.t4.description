@@ -1,0 +1,12 @@
+author: ehc
+date: 09/03/23
+description: tests that the right amount of whitespace is left in the file in response to various items that would usually create visual spacing (newlines)
+
+This was failing and now is not but I don't appear to have dealt with the below comment. 
+
+Once that is fixed, remove the easy case of the fail at the top and then duplicate the whole content with:
+* no newlines either side of the things such as \medskip
+* whitespace either side of the things such as \medskip
+* as it is now but with broken lines inside the paragraphs
+
+These should all produce the same output but currently don't, this might be fixed by the same fix as earlier but this should be checked. I suspect there is a second bug there

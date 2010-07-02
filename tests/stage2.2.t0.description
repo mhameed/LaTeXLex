@@ -1,0 +1,7 @@
+author: ehc
+date: 09/04/03
+description: check that we are removing special tab characters which we know can turn up outside the tabbing environment as spaces but leaving them alone when in the tabbing environment.
+
+
+Note from 09/03/04:
+From further reading about the tabbing environment I have decided not to write a test because I believe that we are dealing with the environment incorrectly. I have instead tried to determine what all the things do. This is a very complex environment. 

@@ -1,0 +1,1 @@
+{\it Here is some text which includes a close brace that should not be matched \} and some {\bf bold text that includes an open brace that should not be matched \{}}

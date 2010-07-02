@@ -1,0 +1,15 @@
+Here comes some {\it italic} text.
+Here comes some{\it italic} text.
+{\it italic}
+an \it{italicised line of some length}
+an\it{ italicised line of some length}
+an\it{imal}
+the rest \it of this line is italicised
+\it{italicised line of some length}
+\begin{verbatim}
+\it{this is a comment.}
+Here comes a {\it italic} text.
+\end{verbatim}
+an {\it italicised line of some length}
+an{\it italicised line of some length}
+an{\it imal}

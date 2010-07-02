@@ -1,0 +1,3 @@
+author: ehc
+date: 09/03/04
+description: test tabular environment pulls up split lines and pushes down multiple lines on one line except in verbatim, tests tabular* environment is correctly recognised, note that currently the stage cannot deal with line splits that occur between two &

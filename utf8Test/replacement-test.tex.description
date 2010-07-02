@@ -1,0 +1,3 @@
+Date: 10/07/02
+Added by: EHC
+Description: the full LaTeXLex should be run on replacement test to check that the utf8 replacement is functioning as expected. At the moment this tests only the Greek and so the test should be expanded.  

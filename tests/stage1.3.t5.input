@@ -1,0 +1,23 @@
+Here is some text and now some maths
+${\mathcal A}, \mathcal{A}, \cal{A}, {\cal A}$
+${\mathscr A}, \mathscr{A}, \scr{A}, {\scr A}$
+${\mathfrak A}, \mathfrak{A}, \frak{A}, {\frak A}$
+${\mathbb A}, \mathbb{A}, \bb{A}, {\bb A}$
+
+And here is a harder one in a sentence \mathcal A
+\mathcal A is interesting and then
+$$
+\mathcal A
+$$
+and $$\mathcal A$$ and $\mathcal A$
+
+Some harder examples:
+$\mathcal{A B C}$
+$\mathcal{A^{\#}}$
+$\mathcal{{A}} \mathcal{.A.}$
+There is some question regarding what we want the output to be in these cases.
+
+$\mathbb 1$
+$\mathcal 1$
+$\mathbb{10}$
+$\mathbb 10$

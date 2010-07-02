@@ -1,0 +1,53 @@
+A paragraph \par
+A second
+
+A third
+
+A paragraph \par
+This is a new paragraph following a par and should not be pulled up \medskip 
+Now we have another paragraph, this followed a medskip and should not have been pulled up.\bigskip 
+Now we have another paragraph, this followed a bigskip and should not have been pulled up. \pagebreak
+Now we have a new page this should not have been pulled up. \pagebreak[3] 
+Now we have another new page, this should not have been pulled up.
+
+A new paragraph after a line of whitespace
+        		  
+A last paragraph after a line of spaces and tabs
+
+
+----
+
+A paragraph
+
+\par
+
+A second
+
+A third
+
+A paragraph 
+
+\par
+
+This is a new paragraph following a par and should not be pulled up
+
+\medskip 
+
+Now we have another paragraph, this followed a medskip and should not have been pulled up.
+
+\bigskip 
+
+Now we have another paragraph, this followed a bigskip and should not have been pulled up.
+
+\pagebreak
+
+Now we have a new page this should not have been pulled up.
+
+\pagebreak[3] 
+
+Now we have another new page, this should not have been pulled up.
+
+A new paragraph after a line of whitespace
+        		  
+A last paragraph after a line of spaces and tabs
+

@@ -1,0 +1,7 @@
+author: ehc
+date: 09/04/01
+description: tests that the right amount of whitespace is left in the file in response to various items that would usually create visual spacing (newlines)
+
+duplicates the contents of t4 by:
+* no newlines either side of things such as \medskip
+* with broken lines inside the paragraphs, please note that the double spaces arise because of the replacement of a newline with a space when the original author left a space at the end of the line. THis is considered to be correct behaviour presently - verified by MH

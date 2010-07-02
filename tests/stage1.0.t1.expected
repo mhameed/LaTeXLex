@@ -1,0 +1,101 @@
+
+Here \ul{mathematics} --- it is all made up. Why -- because I couldn't think of any mathematics that made sense -- and used everything!
+
+a^{*} != b <= c >= d
+
+a != b <= c >= d
+
+a != b
+
+a << b >> c 
+
+a +- b -+ c
+
+a | b
+
+( a, b)
+
+ a, b 
+
+a -> b -> c -> d -> e
+
+a <- b 
+
+a <== b ==> c
+
+a <-> b
+
+a <=> b
+
+a ... b
+
+a \lor b \land c
+
+a \biglor b \bigland c
+
+"Here is some text is quotes to finish"
+
+Everything below here until verbatim should be removed (except the whitespace) which should leave  12 lines with nothing on, except the first two lines should contain 11 and 3 spaces:
+           
+   
+
+
+
+
+
+
+
+
+
+
+\begin{verbatim}
+Here \underline{mathematics} \mdash it is all made up. Why \ndash because I couldn't think of any mathematics that made sense \ndash and used everything!
+
+a^{\ast} \ne b \le c \ge d
+
+a \neq b \leq c \geq d
+
+a \not= b
+
+a \ll b \gg c 
+
+a \pm b \mp c
+
+a \mid b
+
+\bigl( a, b\bigr)
+
+\left. a, b \right.
+
+a \to b \rightarrow c \leadsto d \mapsto e
+
+a \leftarrow b 
+
+a \Leftarrow b \Rightarrow c
+
+a \leftrightarrow b
+
+a \Leftrightarrow b
+
+a \ldots b
+
+a \vee b \wedge c
+
+a \bigvee b \bigwedge c
+
+''Here is some text is quotes to finish``
+
+Everything below here until verbatim should be removed (except the whitespace) which should leave  12 lines with nothing on, except the first two lines should contain 11 and 3 spaces:
+\, \: \; \  \! ~
+\quad \qquad
+\linebreak[4]
+\baselineskip
+\vfill
+\eject
+\bye
+\noindent
+\sloppy
+\fussy
+\raggedright
+\raggedleft
+\end{verbatim}

@@ -1,0 +1,11 @@
+[Tab]
+[Tab][Tab]
+[Tab][Tab][Tab]
+
+ [Tab] [Tab] [Tab]
+
+Here is some text and then a [Tab] and then two with no space between [Tab][Tab] and then two with spaces between [Tab] [Tab].
+
+[Tab]A
+[Tab][Tab]B
+[Tab][Tab][Tab]C

@@ -1,0 +1,31 @@
+\begin{tabular}{c|c|c}
+First column & Second column & Third column \\
+\hline ---------
+Here is a long piece of text in the first column & And a long piece in the second column & And a long piece in the third column\\
+Short first & short second & short third \\
+first & second & third\\
+Here is a 
+line split in a column & second & third\\
+\multicolumn{3}{c}{this text reaches across columns}\\
+\multicolumn{3}{c}{so does this 
+text}\\
+\end{tabular}
+\begin{verbatim}
+\begin{tabular}{c|c|c}
+First column & Second column & Third column \\
+\hline
+Here is a long piece of text in the first column &
+And a long piece in the second column & 
+And a long piece in the third column\\
+Short first & short second & short third \\ first & second & third\\
+Here is a 
+line split in a column & second & third\\
+\multicolumn{3}{c}{this text reaches across columns}\\
+\multicolumn{3}{c}{so does this 
+text}\\
+\end{tabular}
+\end{verbatim}
+\begin{tabular*}{2cm}{c|c|c}
+little table 1 & little table 2\\
+second row & second row 
+\end{tabular*}

@@ -1,0 +1,8 @@
+Here is some maths with an array in it
+\begin{array}{ccc} 1 & 2 & 3 \\
+4 & 5 & 6 
+\end{array}
+and then the text continues and now some double dollar maths with an array in it:
+$$\begin{array}{ccc} 1 & 2 & 3 \\
+4 & 5 & 6 
+\end{array}$$

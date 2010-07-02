@@ -1,0 +1,18 @@
+\begin{itemize}
+\item Here is an itemize that should not be touched
+\item And an item that contains some maths:
+x^2 + y^2 = z^2
+\item and an item that contains an itemize:
+\begin{itemize}
+\item Internal items
+\item and another which contains a verbatim
+\begin{verbatim}
+Some
+stuff
+\end{verbatim}
+\end{itemize}
+
+\item and an item with some spaces at the end   
+\end{itemize}
+
+And some more stuff that should be pulled up.
