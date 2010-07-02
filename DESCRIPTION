@@ -13,11 +13,11 @@ LaTeXLex works on Linux but in the past we have been able to compile and run it 
 
 We choose to use Flex to write LaTeXLex because attempts to use a parser would have failed, as LaTeX is a free grammar. Flex allows us to take into account some level of context when re-writing text and so has been found to be more expressive than other processing methods. 
 
-You will find a tar.bz2 archive of the sources and some of the tests. At present time we are unable to provide version control system (VCS) access. 
+You can check out a copy of LaTeXLex using the following command:
+> git clone http://mesarhameed.info/git/LaTeXLex
 
 As LaTeXLex has matured and a wide range of inputs from many authors and output from <href='http://www.inftyproject.org/en/index.html'>Infty software</a> we found it best to write a test suite so that when we add in new rules to deal with new LaTeX issues we do not break the way that we already process text. If you make any changes to LaTeXLex, even small ones, it is advisable that you run 
-> ./run_tests.sh 
-> ./run_tests.sh pipe 
+> make test
 and check that all tests report Ok. Ideally you should add your own small test in the tests directory. Tests are small snippets of LaTeX which are the minimum amount of lines to reproduce a particular situation. However, quite complex interactions can occur between our rules and LaTeX and the pipes aim to catch these. Unfortunately you are missing two of the pipes due to the use of copyright material in the tests. 
 
 LaTeXLex remains a work in progress, you will find some parts have not yet been implemented to our satisfaction and you may find complex LaTeX documents (particularly those containing raw TeX) that it cannot process sufficiently. If you have comments or patches then please feel free to let us know! 
