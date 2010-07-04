@@ -1,7 +1,15 @@
+---
+
+the make process should not fail if the bin directory doesn't exist, 
+in that case it should make it. Make clean should also remove bin.
 
 ---
 
-Sometimes we might need to leave in the \bf or \mathbf, for instance, if a paper refers to both x and {\bf x} but generally we don't expect people to be so perverse and hence we would usually wish to remove \bf. The planned solution for this is to have command line options which can switch off this and other similar situations. Ones we have thought of so far:
+Sometimes we might need to leave in the \bf or \mathbf, for instance, if a 
+paper refers to both x and {\bf x} but generally we don't expect people to 
+be so perverse and hence we would usually wish to remove \bf. The planned 
+solution for this is to have command line options which can switch off 
+this and other similar situations. Ones we have thought of so far:
 
 \bf \mathbf removal
 
