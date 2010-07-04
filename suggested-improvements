@@ -1,5 +1,13 @@
 ---
 
+Should follow the standard install procedure.
+$ ./configure
+$ make
+$ make test
+$ sudo make install
+
+---
+
 the make process should not fail if the bin directory doesn't exist, 
 in that case it should make it. Make clean should also remove bin.
 
