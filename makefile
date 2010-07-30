@@ -21,9 +21,12 @@ BDIR=./bin/
 SOURCES=$(wildcard $(SDIR)*.lex)
 OBJECTS=$(patsubst $(SDIR)%,$(BDIR)%,$(patsubst %.lex,%,$(SOURCES)))
 
-.PHONEY: all clean update
+.PHONEY: all clean
 
-all: $(OBJECTS)
+all: $(BDIR) $(OBJECTS)
+
+$(BDIR):
+	mkdir $(BDIR)
 
 $(BDIR)%: $(SDIR)%.lex
 	flex $<
@@ -31,10 +34,8 @@ $(BDIR)%: $(SDIR)%.lex
 	@rm lex.yy.c
 
 clean: 
-	rm -f $(BDIR)* tests/*.out pipes/*.out
-
-update: 
-	svn update
+	-rm $(OBJECTS) tests/*.out pipes/*.out
+	-rmdir $(BDIR)
 
 test: all
 	./run_tests.sh
